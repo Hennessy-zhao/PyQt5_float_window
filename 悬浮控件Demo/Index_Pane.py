@@ -14,9 +14,6 @@ class IndexPane(QWidget, Ui_Form):
 
         self.setupUi(self)  # 显示UI
 
-
-
-
     # 显示事件函数 设置初始显示内容
     def showEvent(self, QShowEvent):
         self.create_widget()
