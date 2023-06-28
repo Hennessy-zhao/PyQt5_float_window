@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>722</width>
+    <height>440</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Form{
+	background-color: rgb(85, 170, 0);
+}
+
+#widget_1{
+	background-color: rgba(255, 255, 255,0.3);
+	border-radius : 10px;
+}
+
+#label_1{
+	margin-left : 100px;
+	font: 75 12pt &quot;微软雅黑&quot;;
+
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QWidget" name="widget_3" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>显示悬浮</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="text">
+            <string>隐藏悬浮</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="text">
+            <string>显示窗口</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="text">
+            <string>隐藏窗口</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(85, 85, 127);</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>showWidget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>42</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-154</x>
+     <y>173</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>showWindow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>488</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>903</x>
+     <y>57</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>hideWidget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>291</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>-53</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>hideWindow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>629</x>
+     <y>119</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>890</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>showWidget()</slot>
+  <slot>showWindow()</slot>
+  <slot>hideWidget()</slot>
+  <slot>hideWindow()</slot>
+ </slots>
+</ui>
