@@ -61,6 +61,7 @@ class IndexPane(QWidget, Ui_Form):
         self.dailog.close()
 
 
+
 if __name__=='__main__':
     app = QApplication(sys.argv)
 
