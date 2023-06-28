@@ -43,7 +43,6 @@ class IndexPane(QWidget, Ui_Form):
         self.hor_1.addWidget(self.label_1)      #布局中添加控件
 
 
-
     def showWidget(self):
         self.widget_1.setVisible(True)
 
