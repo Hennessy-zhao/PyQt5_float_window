@@ -69,7 +69,5 @@ if __name__=='__main__':
 
     form = IndexPane()
     form.show()
-    # form.showMaximized()
-    # form.showFullScreen()
 
     sys.exit(app.exec_())
