@@ -44,6 +44,7 @@ class IndexPane(QWidget, Ui_Form):
 
 
 
+
     def showWidget(self):
         self.widget_1.setVisible(True)
 
